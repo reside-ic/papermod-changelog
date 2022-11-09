@@ -1,0 +1,27 @@
+.post-entry .post-tags {
+    display: inline-block;
+}
+
+.post-entry-tag ul {
+    list-style-type: disc;
+}
+
+.post-tags a {
+    display: block;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    color: var(--secondary);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 34px;
+    background: var(--theme);
+}
+
+.post-tags a:active {
+    transition: transform 0.1s;
+    transform: scale(0.98);
+}
+
+.post-tags:hover {
+    text-decoration: unset;
+}

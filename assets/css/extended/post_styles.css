@@ -1,0 +1,7 @@
+.paginav {
+    font-size: medium;
+    margin: 10px 0;
+    display: flex;
+    line-height: 30px;
+    border-radius: var(--radius);
+}

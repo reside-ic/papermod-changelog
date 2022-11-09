@@ -1,0 +1,5 @@
+{{ range site.Params.tags }}
+  .post-tags a.{{ .text }} {
+    color: {{ .colour }}
+  }
+{{ end }}

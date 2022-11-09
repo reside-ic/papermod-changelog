@@ -1,0 +1,20 @@
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+{{- $scratch.Add "post-title" (slice (printf "<span class='date' title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
+{{- end }}
+
+{{- $scratch.Add "post-title" (slice (printf "<span class='title'>%s</span>" (.Title) ))}}
+
+{{- with ($scratch.Get "post-title") }}
+{{- delimit . "" -}}
+{{- end -}}
+
+<span class="post-tags">
+{{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+<ul>
+  {{- range ($.GetTerms $tags) }}
+  <li><a href="{{ .Permalink }}" class={{ .LinkTitle }}>{{ .LinkTitle }}</a></li>
+  {{- end }}
+</ul>
+</span>
