@@ -9,6 +9,8 @@ theme: ["papermod-changelog", "PaperMod"]
 
 This updates some of the styling and adds some small features to make the site better for displaying software changelogs.
 
+Note that the extended version of hugo is needed for this to work.
+
 ## Features
 
 ### Configure tags and colours
