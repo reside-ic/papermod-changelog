@@ -2,4 +2,8 @@
   .post-tags a.{{ .text }} {
     color: {{ .colour }}
   }
+
+  .terms-tags a.{{ .text }} {
+    color: {{ .colour }}
+  }
 {{ end }}

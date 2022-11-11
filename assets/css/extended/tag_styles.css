@@ -25,3 +25,24 @@
 .post-tags:hover {
     text-decoration: unset;
 }
+
+.terms-tags li {
+    display: inline-block;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.terms-tags a {
+    display: block;
+    padding: 3px 10px;
+    background: var(--theme);
+    box-sizing: border-box;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    transition: transform 0.1s;
+}
+
+.terms-tags a:active {
+    background: var(--tertiary);
+    transform: scale(0.96);
+}
