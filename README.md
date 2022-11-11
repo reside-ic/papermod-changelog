@@ -4,10 +4,12 @@ This theme is an extension of https://github.com/adityatelange/hugo-PaperMod and
 
 Set your theme in your `config.yml` to
 ```
-theme: ["PaperMod", "papermod-changelog"]
+theme: ["papermod-changelog", "PaperMod"]
 ```
 
 This updates some of the styling and adds some small features to make the site better for displaying software changelogs.
+
+Note that the extended version of hugo is needed for this to work.
 
 ## Features
 
